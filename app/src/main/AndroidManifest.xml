@@ -10,6 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TwoActivities">
         <activity
+            android:name=".SecondActivity"
+            android:label="@string/activity2_name"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.android.twoactivities.MainActivity" />
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
